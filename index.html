@@ -5,56 +5,80 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>강동훈에게 보내는 편지</title>
+    <title>2023년 버킷리스트</title>
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Gaegu:wght@400;700&family=Gowun+Dodum&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Gowun+Dodum&display=swap');
 
         * {
-            font-family: 'Gaegu', cursive;
             font-family: 'Gowun Dodum', sans-serif;
         }
 
         .title {
-            color: rgb(155, 149, 241);
-            background-color: bisque;
-            font-size: 35px;
+            color: white;
+            background-color: tomato;
+            font-size: 24px;
             padding: 4px 14px;
             border-radius: 8px;
 
         }
+
         .bg {
             width: 360px;
+            background-image:
+                url("https://s3.ap-northeast-2.amazonaws.com/materials.spartacodingclub.kr/bucketList/bg-grid.png");
         }
 
         .msg {
             font-weight: bold;
         }
 
+        .bucket {
+            width: 160px;
+            height: 160px;
+        }
 
+        .img1 {
+            background-image:
+                url("https://s3.ap-northeast-2.amazonaws.com/materials.spartacodingclub.kr/bucketList/bucket-red.png");
+            background-size: cover;
+            background-position: center;
+        }
+
+        .img2 {
+            background-image:
+                url("https://s3.ap-northeast-2.amazonaws.com/materials.spartacodingclub.kr/bucketList/bucket-lightred.png");
+            background-size: cover;
+            background-position: center;
+        }
+        .done::after {    
+        content: "";
+        width: 70%;
+        height: 70%;
+        background-image: url("https://s3.ap-northeast-2.amazonaws.com/materials.spartacodingclub.kr/bucketList/stamp.png");
+        background-size: cover;
+        background-position: center;
+        position: absolute;
+        top: 20%;
+        opacity: 0.5;
+      }
     </style>
+    <link rel="stylesheet" type="text/css"
+        href="https://s3.ap-northeast-2.amazonaws.com/materials.spartacodingclub.kr/bucketList/sparta-bucket2.css">
 </head>
 
-<body class="bg">
-    <h1 class="title">강동훈은 보아라!</h1>
-    <p class="msg">"강동훈이 지켜야 할 여러가지" </p>
+<body class="bg-t3 center">
+    <h1 class="title-t5">2023's BUCKET LIST</h1>
+    <p class="msg">"우리가 인생에서 가장 많이 후회하는 것은 살면서 </p>
+    <p class="msg"> 한 일들이 아니라 하지 않은 일들이다."</p>
     <div class="row flex-row wrap">
-        <div class="list1">첫 번째는 </div>
-        <div class="list1">나에게 잘해주기. </div>
-            <div class="list1">이 말은 즉슨 나 말고 다른 여자에게 눈길도 손길도 다 주면 안 된다는 뜻. 거기다가 솜털이라도 닿으면 죽인다. </div>
-        <br>
-        <div class="list2">두 번째는 </div>
-        <div class="list2">버킷리스트에 쓴 것처럼 규칙적인 삶을 살아라!</div> 
-            <div class="list2">안 그러면 우리 나중에 같이 살 때 새벽 4시에 깨우는 수가 있어. 명심하도록 </div>
-        <br>
-        <div class="list3 center">세 번째는 </div>
-        <div class="list3">내가 초반에도 부탁했던 건데 제발!!!! 상황을 피하기 위해서 미안하다는 말 쉽게 하지 않기. </div>
-            <div class="list3">이건 질릴도록 내가 말해서 알거야 암암 </div>
-        <br>
-        <div class="list4 center">네 번째는 </div>
-        <div class="list4"> 채영이 많이 예뻐해쥬기. 안아도 좋고 쓰담쓰담해줘도 좋고 !!!!!!!!! 7ㅑ악 </div>
-        <br>
-        <div class="list5 center">끝이야 흥 ! </div>
+        <div class="bucket img1-t5 center">원하는 곳에 취업하기</div>
+        <div class="bucket img2-t5 center">첫 월급받기</div>
+        <div class="bucket img3-t5 center">몸매 가꾸기</div>
+        <div class="bucket img4-t5 center">한 달에 책 1-2권 읽기</div>
+        <div class="bucket img5-t5 center">강동훈이랑 여행가기</div>
+        <div class="bucket img6-t5 center">나만의 취미 만들기</div>
     </div>
+
 </body>
 
 </html>
