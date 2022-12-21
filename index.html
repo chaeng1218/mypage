@@ -62,8 +62,15 @@
         opacity: 0.5;
       }
     </style>
-    <link rel="stylesheet" type="text/css"
-        href="https://s3.ap-northeast-2.amazonaws.com/materials.spartacodingclub.kr/bucketList/sparta-bucket2.css">
+   <link rel="stylesheet" type="text/css"
+          href="https://s3.ap-northeast-2.amazonaws.com/materials.spartacodingclub.kr/bucketList/sparta-bucket2.css">
+    
+    <script>
+        function done(id) {
+            let name = document.getElementById(id).classList
+            document.getElementById(id).className = name + " done"
+        }
+    </script>
 </head>
 
 <body class="bg-t3 center">
@@ -71,12 +78,12 @@
     <p class="msg">"우리가 인생에서 가장 많이 후회하는 것은 살면서 </p>
     <p class="msg"> 한 일들이 아니라 하지 않은 일들이다."</p>
     <div class="row flex-row wrap">
-        <div class="bucket img1-t5 center">원하는 곳에 취업하기</div>
-        <div class="bucket img2-t5 center">첫 월급받기</div>
-        <div class="bucket img3-t5 center">몸매 가꾸기</div>
-        <div class="bucket img4-t5 center">한 달에 책 1-2권 읽기</div>
-        <div class="bucket img5-t5 center">강동훈이랑 여행가기</div>
-        <div class="bucket img6-t5 center">나만의 취미 만들기</div>
+        <div class="bucket img1-t5 center" id="list_1" onclick="done(this.id)">원하는 곳에 취업하기</div>
+        <div class="bucket img2-t5 center" id="list_2" onclick="done(this.id)">첫 월급받기</div>
+        <div class="bucket img3-t5 center" id="list_3" onclick="done(this.id)">몸매 가꾸기</div>
+        <div class="bucket img4-t5 center" id="list_4" onclick="done(this.id)">한 달에 책 1-2권 읽기</div>
+        <div class="bucket img5-t5 center" id="list_5" onclick="done(this.id)">강동훈이랑 여행가기</div>
+        <div class="bucket img6-t5 center" id="list_6" onclick="done(this.id)">나만의 취미 만들기</div>
     </div>
 
 </body>
